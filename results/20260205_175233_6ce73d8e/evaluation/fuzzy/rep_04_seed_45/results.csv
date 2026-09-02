@@ -1,0 +1,2 @@
+run_id,timestamp_utc,seed,problem_name,method_name,notes,metric__best_fitness,metric__time_sec,metric__n_iterations,metric__step_final
+rep_04_seed_45,,45,rosenbrock,fuzzy,,3043875.258632261,0.0054471492767333984,248.0,1e-06

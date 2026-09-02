@@ -1,0 +1,14 @@
+{
+  "problem_type": "function_optimization",
+  "selected_method": "pso",
+  "reasoning": "Particle Swarm Optimization (PSO) is well-suited for continuous optimization problems like the Rosenbrock function due to its ability to explore the search space effectively and converge towards the global optimum.",
+  "parameters": {
+    "swarm_size": 100,
+    "max_iterations": 1000,
+    "c1": 1.5,
+    "c2": 1.5,
+    "inertia_weight": 0.7
+  },
+  "backup_method": "ga",
+  "confidence": 0.85
+}

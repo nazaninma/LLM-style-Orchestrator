@@ -1,0 +1,2 @@
+run_id,timestamp_utc,seed,problem_name,method_name,notes,metric__best_fitness,metric__time_sec,metric__iterations_completed
+rep_02_seed_43,,43,rosenbrock,ga,ga continuous optimizer,349.148706688799,0.6907579898834229,501.0
