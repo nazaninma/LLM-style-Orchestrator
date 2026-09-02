@@ -1,0 +1,50 @@
+{
+  "rows": [
+    {
+      "method": "aco",
+      "n_runs": 5,
+      "n_success": 0,
+      "success_rate": 0.0,
+      "primary_metric": "tour_length",
+      "primary_mean": 5270.0,
+      "primary_std": 0.0,
+      "primary_ci_low": 5270.0,
+      "primary_ci_high": 5270.0,
+      "maximize": false,
+      "time_sec_mean": 12.365886449813843,
+      "time_sec_std": 0.15497810572825546
+    },
+    {
+      "method": "ga_tsp",
+      "n_runs": 5,
+      "n_success": 0,
+      "success_rate": 0.0,
+      "primary_metric": "tour_length",
+      "primary_mean": 5270.0,
+      "primary_std": 0.0,
+      "primary_ci_low": 5270.0,
+      "primary_ci_high": 5270.0,
+      "maximize": false,
+      "time_sec_mean": 53.75274925231933,
+      "time_sec_std": 8.686803237612416
+    },
+    {
+      "method": "hopfield",
+      "n_runs": 5,
+      "n_success": 0,
+      "success_rate": 0.0,
+      "primary_metric": "tour_length",
+      "primary_mean": 9829.8,
+      "primary_std": 186.06101149891666,
+      "primary_ci_low": 9666.710332687811,
+      "primary_ci_high": 9992.889667312187,
+      "maximize": false,
+      "time_sec_mean": 0.0601165771484375,
+      "time_sec_std": 0.02226749110952317,
+      "n_iterations_mean": 400.0,
+      "n_iterations_std": 0.0,
+      "best_fitness_mean": 9829.8,
+      "best_fitness_std": 186.06101149891666
+    }
+  ]
+}

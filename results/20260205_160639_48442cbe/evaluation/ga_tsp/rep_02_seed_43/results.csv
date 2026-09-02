@@ -1,0 +1,2 @@
+run_id,timestamp_utc,seed,problem_name,method_name,notes,metric__tour_length,metric__time_sec,metric__iterations_completed,metric__gap_to_optimal_percent
+rep_02_seed_43,,43,berlin52,ga_tsp,ga tsp permutation,5270.0,55.55553603172302,401.0,-30.124635375232035

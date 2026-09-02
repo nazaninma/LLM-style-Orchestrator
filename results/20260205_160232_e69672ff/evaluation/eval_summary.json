@@ -1,0 +1,119 @@
+{
+  "problem_name": "eil51",
+  "problem_type": "tsp",
+  "repeats": 5,
+  "methods": [
+    "aco",
+    "ga_tsp",
+    "hopfield"
+  ],
+  "stats": [
+    {
+      "method": "aco",
+      "primary_metric": "tour_length",
+      "primary_mean": 243.0,
+      "primary_std": 0.0,
+      "primary_ci_low": 243.0,
+      "primary_ci_high": 243.0,
+      "maximize": false,
+      "n_runs": 5,
+      "n_success": 0,
+      "n_fail": 0,
+      "success_rate": 0.0,
+      "metrics_mean": {
+        "convergence_speed_iter": 2.0,
+        "gap_percentage": -42.95774647887324,
+        "gap_to_optimal_percent": -42.95774647887324,
+        "iterations_completed": 301.0,
+        "known_optimal": 426.0,
+        "time_sec": 24.80667848587036,
+        "tour_length": 243.0
+      },
+      "metrics_std": {
+        "convergence_speed_iter": 0.0,
+        "gap_percentage": 0.0,
+        "gap_to_optimal_percent": 0.0,
+        "iterations_completed": 0.0,
+        "known_optimal": 0.0,
+        "time_sec": 8.165139133888658,
+        "tour_length": 0.0
+      }
+    },
+    {
+      "method": "ga_tsp",
+      "primary_metric": "tour_length",
+      "primary_mean": 243.0,
+      "primary_std": 0.0,
+      "primary_ci_low": 243.0,
+      "primary_ci_high": 243.0,
+      "maximize": false,
+      "n_runs": 5,
+      "n_success": 0,
+      "n_fail": 0,
+      "success_rate": 0.0,
+      "metrics_mean": {
+        "convergence_speed_iter": 1.8,
+        "gap_percentage": -42.95774647887324,
+        "gap_to_optimal_percent": -42.95774647887324,
+        "iterations_completed": 601.0,
+        "known_optimal": 426.0,
+        "time_sec": 70.17147445678711,
+        "tour_length": 243.0
+      },
+      "metrics_std": {
+        "convergence_speed_iter": 1.3038404810405297,
+        "gap_percentage": 0.0,
+        "gap_to_optimal_percent": 0.0,
+        "iterations_completed": 0.0,
+        "known_optimal": 0.0,
+        "time_sec": 4.637125101474112,
+        "tour_length": 0.0
+      }
+    },
+    {
+      "method": "hopfield",
+      "primary_metric": "tour_length",
+      "primary_mean": 501.2,
+      "primary_std": 5.215361924162119,
+      "primary_ci_low": 496.6285337144413,
+      "primary_ci_high": 505.7714662855587,
+      "maximize": false,
+      "n_runs": 5,
+      "n_success": 0,
+      "n_fail": 0,
+      "success_rate": 0.0,
+      "metrics_mean": {
+        "best_fitness": 501.2,
+        "gap_percentage": 17.652582159624412,
+        "known_optimal": 426.0,
+        "n_iterations": 200.0,
+        "time_sec": 0.006140661239624023,
+        "tour_length": 501.2
+      },
+      "metrics_std": {
+        "best_fitness": 5.215361924162119,
+        "gap_percentage": 1.2242633624793697,
+        "known_optimal": 0.0,
+        "n_iterations": 0.0,
+        "time_sec": 0.0012240917234675032,
+        "tour_length": 5.215361924162119
+      }
+    }
+  ],
+  "wilcoxon_vs_best": {
+    "ga_tsp": {
+      "p_value": null,
+      "n_pairs": 5,
+      "best_method": "aco",
+      "metric": "tour_length",
+      "maximize": false
+    },
+    "hopfield": {
+      "p_value": null,
+      "n_pairs": 5,
+      "best_method": "aco",
+      "metric": "tour_length",
+      "maximize": false
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "problem_type": "tsp",
+  "selected_method": "ga_tsp",
+  "reasoning": "Genetic algorithms are well-suited for solving TSP problems due to their ability to explore a large solution space and find near-optimal solutions efficiently.",
+  "parameters": {
+    "population_size": 100,
+    "mutation_rate": 0.01,
+    "crossover_rate": 0.9,
+    "max_generations": 500
+  },
+  "backup_method": null,
+  "confidence": 0.9
+}

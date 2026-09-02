@@ -1,0 +1,2 @@
+run_id,timestamp_utc,seed,problem_name,method_name,notes,metric__tour_length,metric__time_sec,metric__iterations_completed,metric__gap_to_optimal_percent
+rep_05_seed_46,,46,berlin52,aco,aco tsp,5270.0,12.62333369255066,201.0,-30.124635375232035
