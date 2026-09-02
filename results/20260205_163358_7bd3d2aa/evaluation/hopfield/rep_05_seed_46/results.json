@@ -1,0 +1,42 @@
+[
+  {
+    "metadata": {
+      "run_id": "rep_05_seed_46",
+      "timestamp_utc": "",
+      "seed": 46,
+      "problem_name": "berlin52",
+      "method_name": "hopfield"
+    },
+    "metrics": {
+      "best_fitness": 10007.0,
+      "time_sec": 0.032851457595825195,
+      "n_iterations": 400.0
+    },
+    "artifacts": {
+      "tour": [
+        5,
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "tour_length": 10007.0
+    },
+    "notes": null
+  }
+]

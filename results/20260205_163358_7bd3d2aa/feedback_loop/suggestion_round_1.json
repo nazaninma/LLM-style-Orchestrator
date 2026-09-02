@@ -1,0 +1,14 @@
+{
+  "round": 1,
+  "suggestion": {
+    "action": "switch_method",
+    "reason": "Evaluation suggests best method='aco' based on primary metric.",
+    "method": "aco",
+    "method_params": {},
+    "confidence": 0.7
+  },
+  "current_method": "aco",
+  "current_params": {
+    "max_iterations": 400
+  }
+}

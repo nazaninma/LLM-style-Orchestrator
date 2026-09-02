@@ -1,0 +1,13 @@
+{
+  "problem_type": "tsp",
+  "selected_method": "ga_tsp",
+  "reasoning": "TSP larger instance: prefer GA_TSP for scalability; ACO/Hopfield as backups.",
+  "parameters": {
+    "population_size": 200,
+    "generations": 600,
+    "crossover_rate": 0.9,
+    "mutation_rate": 0.2
+  },
+  "backup_method": "aco",
+  "confidence": 0.75
+}
