@@ -1,0 +1,49 @@
+[
+  {
+    "metadata": {
+      "run_id": "rep_03_seed_44",
+      "timestamp_utc": "",
+      "seed": 44,
+      "problem_name": "sphere",
+      "method_name": "gp"
+    },
+    "metrics": {
+      "best_fitness": 0.0,
+      "time_sec": 0.09399533271789551,
+      "n_iterations": 102.0
+    },
+    "artifacts": {
+      "x": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "program": [
+        "sub",
+        "clip",
+        "mul",
+        "tanh",
+        "sin",
+        "clip"
+      ]
+    },
+    "notes": null
+  }
+]

@@ -1,0 +1,2 @@
+run_id,timestamp_utc,seed,problem_name,method_name,notes,metric__best_fitness,metric__time_sec,metric__n_iterations,metric__step_final
+rep_04_seed_45,,45,sphere,fuzzy,,200.36594460455942,0.030779600143432617,3000.0,1e-06

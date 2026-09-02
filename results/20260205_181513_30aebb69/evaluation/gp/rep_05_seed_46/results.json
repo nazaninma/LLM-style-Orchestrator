@@ -1,0 +1,55 @@
+[
+  {
+    "metadata": {
+      "run_id": "rep_05_seed_46",
+      "timestamp_utc": "",
+      "seed": 46,
+      "problem_name": "sphere",
+      "method_name": "gp"
+    },
+    "metrics": {
+      "best_fitness": 0.0,
+      "time_sec": 0.08963894844055176,
+      "n_iterations": 101.0
+    },
+    "artifacts": {
+      "x": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "program": [
+        "sub",
+        "tanh",
+        "clip",
+        "tanh",
+        "clip",
+        "sin",
+        "tanh",
+        "add",
+        "sub",
+        "mul",
+        "add",
+        "sub"
+      ]
+    },
+    "notes": null
+  }
+]
