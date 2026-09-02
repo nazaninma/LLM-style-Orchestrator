@@ -1,0 +1,2 @@
+run_id,timestamp_utc,seed,problem_name,method_name,notes,metric__best_fitness,metric__time_sec,metric__iterations_completed
+rep_03_seed_44,,44,rosenbrock,random_search,random_search baseline,1360189.6123121982,0.001897573471069336,90.0

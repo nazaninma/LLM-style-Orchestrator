@@ -1,0 +1,60 @@
+[
+  {
+    "metadata": {
+      "run_id": "rep_04_seed_45",
+      "timestamp_utc": "",
+      "seed": 45,
+      "problem_name": "rosenbrock",
+      "method_name": "gp"
+    },
+    "metrics": {
+      "best_fitness": 0.0,
+      "time_sec": 0.11290884017944336,
+      "n_iterations": 83.0
+    },
+    "artifacts": {
+      "x": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "program": [
+        "sub",
+        "sin",
+        "tanh",
+        "clip",
+        "mul",
+        "sin",
+        "cos"
+      ]
+    },
+    "notes": null
+  }
+]

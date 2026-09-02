@@ -1,0 +1,14 @@
+{
+  "problem_type": "function_optimization",
+  "selected_method": "ga",
+  "reasoning": "Rosenbrock has a narrow curved valley; GA/GP often handle it well; PSO/Fuzzy as backups.",
+  "parameters": {
+    "population_size": 120,
+    "generations": 500,
+    "crossover_rate": 0.85,
+    "mutation_rate": 0.15,
+    "tournament_k": 3
+  },
+  "backup_method": "gp",
+  "confidence": 0.68
+}
