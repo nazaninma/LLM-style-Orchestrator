@@ -1,0 +1,52 @@
+{
+  "round": 3,
+  "method": "mlp",
+  "params": {
+    "hidden_layers": [
+      16,
+      16
+    ],
+    "lr": 0.05,
+    "epochs": 200
+  },
+  "result": {
+    "metrics": {
+      "train_accuracy": 0.85553772070626,
+      "train_precision": 0.9181286549707602,
+      "train_recall": 0.6738197424892703,
+      "train_f1": 0.7772277227722773,
+      "train_confusion": {
+        "tp": 157,
+        "tn": 376,
+        "fp": 14,
+        "fn": 76
+      },
+      "val_accuracy": 0.8195488721804511,
+      "val_precision": 0.86,
+      "val_recall": 0.7166666666666667,
+      "val_f1": 0.7818181818181817,
+      "val_confusion": {
+        "tp": 43,
+        "tn": 66,
+        "fp": 7,
+        "fn": 17
+      },
+      "test_accuracy": 0.8148148148148148,
+      "test_precision": 0.7857142857142857,
+      "test_recall": 0.673469387755102,
+      "test_f1": 0.7252747252747253,
+      "test_confusion": {
+        "tp": 33,
+        "tn": 77,
+        "fp": 9,
+        "fn": 16
+      },
+      "time_sec": 0.10867452621459961,
+      "iterations_completed": 200.0
+    },
+    "artifacts": {},
+    "notes": "mlp binary classifier",
+    "method": "mlp",
+    "seed": 45
+  }
+}
