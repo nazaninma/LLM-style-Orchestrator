@@ -1,0 +1,42 @@
+2026-02-05 20:03:58 | INFO | metamind.utils.logging | Logging initialized. File=D:\UN\7th_Semester_Contents\Computational_Intelligence\Project\v6\results\logs\20260205_163358_7bd3d2aa.log
+2026-02-05 20:03:58 | INFO | metamind | Run started. run_id=20260205_163358_7bd3d2aa
+2026-02-05 20:03:58 | INFO | metamind | Config file: D:\UN\7th_Semester_Contents\Computational_Intelligence\Project\v6\configs\tsp_berlin52_eval.yaml
+2026-02-05 20:03:58 | INFO | metamind | Config: seed=42, default_problem=berlin52, default_method=aco
+2026-02-05 20:03:58 | INFO | metamind | Settings: {'problem_type': 'tsp', 'problem_meta': {'source': 'tsplib', 'data_dir': 'data/tsplib', 'problem_id': 'light_berlin52'}, 'method_params': {'max_iterations': 400}, 'llm': {'enabled': False, 'provider': 'openai', 'model': 'gpt-4o-mini', 'api_key_env': 'METIS_API_KEY', 'base_url': 'https://api.metisai.ir/openai/v1', 'temperature': 0.1}, 'evaluation': {'enabled': True, 'repeats': 5, 'methods': ['aco', 'ga_tsp', 'hopfield'], 'make_plots': True, 'save_per_run': True}, 'feedback_loop': {'enabled': True, 'max_rounds': 3, 'min_confidence': 0.55}}
+2026-02-05 20:03:58 | INFO | metamind | Available methods: ['aco', 'fuzzy', 'ga', 'ga_tsp', 'gp', 'hopfield', 'kmeans', 'mlp', 'noop', 'perceptron', 'pso', 'random_search', 'som']
+2026-02-05 20:03:58 | INFO | metamind | Decision: {'problem_type': 'tsp', 'selected_method': 'ga_tsp', 'reasoning': 'TSP larger instance: prefer GA_TSP for scalability; ACO/Hopfield as backups.', 'parameters': {'population_size': 200, 'generations': 600, 'crossover_rate': 0.9, 'mutation_rate': 0.2}, 'backup_method': 'aco', 'confidence': 0.75}
+2026-02-05 20:03:58 | INFO | metamind | Evaluation run: method=aco rep=1/5 seed=42
+2026-02-05 20:03:58 | INFO | metamind | Eval progress: iter=0 best=5270.0 metrics={'best_tour_length': 5270.0, 'gap_percent': -30.124635375232035}
+2026-02-05 20:04:14 | INFO | metamind | Evaluation run: method=aco rep=2/5 seed=43
+2026-02-05 20:04:14 | INFO | metamind | Eval progress: iter=0 best=5270.0 metrics={'best_tour_length': 5270.0, 'gap_percent': -30.124635375232035}
+2026-02-05 20:04:34 | INFO | metamind | Evaluation run: method=aco rep=3/5 seed=44
+2026-02-05 20:04:35 | INFO | metamind | Eval progress: iter=0 best=5270.0 metrics={'best_tour_length': 5270.0, 'gap_percent': -30.124635375232035}
+2026-02-05 20:04:55 | INFO | metamind | Evaluation run: method=aco rep=4/5 seed=45
+2026-02-05 20:04:55 | INFO | metamind | Eval progress: iter=0 best=5270.0 metrics={'best_tour_length': 5270.0, 'gap_percent': -30.124635375232035}
+2026-02-05 20:05:15 | INFO | metamind | Evaluation run: method=aco rep=5/5 seed=46
+2026-02-05 20:05:16 | INFO | metamind | Eval progress: iter=0 best=5322.0 metrics={'best_tour_length': 5322.0, 'gap_percent': -29.4351630867144}
+2026-02-05 20:05:36 | INFO | metamind | Evaluation run: method=ga_tsp rep=1/5 seed=42
+2026-02-05 20:05:38 | INFO | metamind | Eval progress: iter=0 best=5270.0 metrics={'best_tour_length': 5270.0, 'gap_percent': -30.124635375232035}
+2026-02-05 20:06:25 | INFO | metamind | Evaluation run: method=ga_tsp rep=2/5 seed=43
+2026-02-05 20:06:26 | INFO | metamind | Eval progress: iter=0 best=5270.0 metrics={'best_tour_length': 5270.0, 'gap_percent': -30.124635375232035}
+2026-02-05 20:07:20 | INFO | metamind | Evaluation run: method=ga_tsp rep=3/5 seed=44
+2026-02-05 20:07:21 | INFO | metamind | Eval progress: iter=0 best=5270.0 metrics={'best_tour_length': 5270.0, 'gap_percent': -30.124635375232035}
+2026-02-05 20:08:12 | INFO | metamind | Evaluation run: method=ga_tsp rep=4/5 seed=45
+2026-02-05 20:08:13 | INFO | metamind | Eval progress: iter=0 best=5270.0 metrics={'best_tour_length': 5270.0, 'gap_percent': -30.124635375232035}
+2026-02-05 20:08:59 | INFO | metamind | Evaluation run: method=ga_tsp rep=5/5 seed=46
+2026-02-05 20:09:00 | INFO | metamind | Eval progress: iter=0 best=5270.0 metrics={'best_tour_length': 5270.0, 'gap_percent': -30.124635375232035}
+2026-02-05 20:09:53 | INFO | metamind | Evaluation run: method=hopfield rep=1/5 seed=42
+2026-02-05 20:09:53 | INFO | metamind | Eval progress: iter=0 best=9943.0 metrics={'best_len': 9943.0}
+2026-02-05 20:09:53 | INFO | metamind | Evaluation run: method=hopfield rep=2/5 seed=43
+2026-02-05 20:09:53 | INFO | metamind | Eval progress: iter=0 best=10203.0 metrics={'best_len': 10203.0}
+2026-02-05 20:09:53 | INFO | metamind | Evaluation run: method=hopfield rep=3/5 seed=44
+2026-02-05 20:09:53 | INFO | metamind | Eval progress: iter=0 best=10837.0 metrics={'best_len': 10837.0}
+2026-02-05 20:09:53 | INFO | metamind | Evaluation run: method=hopfield rep=4/5 seed=45
+2026-02-05 20:09:53 | INFO | metamind | Eval progress: iter=0 best=11508.0 metrics={'best_len': 11508.0}
+2026-02-05 20:09:53 | INFO | metamind | Evaluation run: method=hopfield rep=5/5 seed=46
+2026-02-05 20:09:53 | INFO | metamind | Eval progress: iter=0 best=10118.0 metrics={'best_len': 10118.0}
+2026-02-05 20:09:54 | INFO | metamind | Evaluation finished. Outputs in: D:\UN\7th_Semester_Contents\Computational_Intelligence\Project\v6\results\20260205_163358_7bd3d2aa\evaluation
+2026-02-05 20:09:54 | INFO | metamind | Feedback round 1: action=switch_method conf=0.70
+2026-02-05 20:10:15 | INFO | metamind | Feedback round 2: action=switch_method conf=0.70
+2026-02-05 20:10:37 | INFO | metamind | Feedback round 3: action=switch_method conf=0.70
+2026-02-05 20:10:59 | INFO | metamind | Evaluation run finished successfully.

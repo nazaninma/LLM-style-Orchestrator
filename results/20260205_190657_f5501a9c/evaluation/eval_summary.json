@@ -1,0 +1,68 @@
+{
+  "problem_name": "iris",
+  "problem_type": "clustering",
+  "repeats": 5,
+  "methods": [
+    "kmeans",
+    "som"
+  ],
+  "stats": [
+    {
+      "method": "kmeans",
+      "primary_metric": "silhouette",
+      "primary_mean": 0.45926477471344695,
+      "primary_std": 0.0016314349710006202,
+      "primary_ci_low": 0.45783475891100406,
+      "primary_ci_high": 0.46069479051588985,
+      "maximize": true,
+      "n_runs": 5,
+      "n_success": 5,
+      "n_fail": 0,
+      "success_rate": 1.0,
+      "metrics_mean": {
+        "inertia": 141.00502632599319,
+        "iterations_completed": 5.0,
+        "silhouette": 0.45926477471344695,
+        "time_sec": 0.015086746215820313
+      },
+      "metrics_std": {
+        "inertia": 0.08338577722989658,
+        "iterations_completed": 0.0,
+        "silhouette": 0.0016314349710006202,
+        "time_sec": 0.0013758670137649328
+      }
+    },
+    {
+      "method": "som",
+      "primary_metric": "silhouette",
+      "primary_mean": 0.0,
+      "primary_std": 0.0,
+      "primary_ci_low": 0.0,
+      "primary_ci_high": 0.0,
+      "maximize": true,
+      "n_runs": 5,
+      "n_success": 5,
+      "n_fail": 0,
+      "success_rate": 1.0,
+      "metrics_mean": {
+        "iterations_completed": 100.0,
+        "quantization_error": 0.04228692473625068,
+        "time_sec": 0.2294095516204834
+      },
+      "metrics_std": {
+        "iterations_completed": 0.0,
+        "quantization_error": 0.002510920948449106,
+        "time_sec": 0.004516549834786031
+      }
+    }
+  ],
+  "wilcoxon_vs_best": {
+    "som": {
+      "p_value": null,
+      "n_pairs": 0,
+      "best_method": "kmeans",
+      "metric": "silhouette",
+      "maximize": true
+    }
+  }
+}

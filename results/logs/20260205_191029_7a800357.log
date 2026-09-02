@@ -1,0 +1,35 @@
+2026-02-05 22:40:29 | INFO | metamind.utils.logging | Logging initialized. File=D:\UN\7th_Semester_Contents\Computational_Intelligence\Project\v6\results\logs\20260205_191029_7a800357.log
+2026-02-05 22:40:29 | INFO | metamind | Run started. run_id=20260205_191029_7a800357
+2026-02-05 22:40:29 | INFO | metamind | Config file: D:\UN\7th_Semester_Contents\Computational_Intelligence\Project\v6\configs\blobs_eval.yaml
+2026-02-05 22:40:29 | INFO | metamind | Config: seed=42, default_problem=blobs, default_method=som
+2026-02-05 22:40:29 | INFO | metamind | Settings: {'problem_type': 'clustering', 'problem_meta': {'source': 'generated', 'dataset': 'blobs', 'n_samples': 400, 'n_features': 2, 'centers': 4, 'cluster_std': 0.9, 'standardize': True}, 'method_params': {'k': 4, 'max_iterations': 300}, 'llm': {'enabled': True, 'provider': 'openai', 'model': 'gpt-4o-mini', 'api_key_env': 'METIS_API_KEY', 'base_url': 'https://api.metisai.ir/openai/v1', 'temperature': 0.1}, 'evaluation': {'enabled': True, 'repeats': 5, 'methods': ['kmeans', 'som'], 'make_plots': True, 'save_per_run': True}, 'feedback_loop': {'enabled': True, 'max_rounds': 3, 'min_confidence': 0.55}}
+2026-02-05 22:40:29 | INFO | metamind | Available methods: ['aco', 'fuzzy', 'ga', 'ga_tsp', 'gp', 'hopfield', 'kmeans', 'mlp', 'noop', 'perceptron', 'pso', 'random_search', 'som']
+2026-02-05 22:40:30 | INFO | metamind | LLM enabled for orchestrator: provider=openai model=gpt-4o-mini api_key_env=METIS_API_KEY
+2026-02-05 22:40:35 | INFO | openai._base_client | Retrying request to /responses in 0.486782 seconds
+2026-02-05 22:40:47 | INFO | httpx | HTTP Request: POST https://api.metisai.ir/openai/v1/responses "HTTP/1.1 200 "
+2026-02-05 22:40:47 | INFO | metamind | Decision: {'problem_type': 'clustering', 'selected_method': 'kmeans', 'reasoning': 'K-means is suitable for clustering tasks with a known number of clusters, and the parameters are set to optimize convergence and performance.', 'parameters': {'n_clusters': 4, 'init': 'k-means++', 'max_iter': 300, 'n_init': 10, 'random_state': 42}, 'backup_method': None, 'confidence': 0.9}
+2026-02-05 22:40:47 | INFO | metamind | Evaluation run: method=kmeans rep=1/5 seed=42
+2026-02-05 22:40:47 | INFO | metamind | Eval progress: iter=0 best=281.90665462551823 metrics={'best_inertia': 281.90665462551823, 'silhouette': 0.32201623602682167}
+2026-02-05 22:40:47 | INFO | metamind | Evaluation run: method=kmeans rep=2/5 seed=43
+2026-02-05 22:40:47 | INFO | metamind | Eval progress: iter=0 best=280.4887224350871 metrics={'best_inertia': 280.4887224350871, 'silhouette': 0.3193195397577362}
+2026-02-05 22:40:47 | INFO | metamind | Evaluation run: method=kmeans rep=3/5 seed=44
+2026-02-05 22:40:47 | INFO | metamind | Eval progress: iter=0 best=285.28147240856345 metrics={'best_inertia': 285.28147240856345, 'silhouette': 0.312617038458007}
+2026-02-05 22:40:48 | INFO | metamind | Evaluation run: method=kmeans rep=4/5 seed=45
+2026-02-05 22:40:48 | INFO | metamind | Eval progress: iter=0 best=280.02697236125016 metrics={'best_inertia': 280.02697236125016, 'silhouette': 0.31616272721961564}
+2026-02-05 22:40:48 | INFO | metamind | Evaluation run: method=kmeans rep=5/5 seed=46
+2026-02-05 22:40:48 | INFO | metamind | Eval progress: iter=0 best=280.39486463998617 metrics={'best_inertia': 280.39486463998617, 'silhouette': 0.3190643895190602}
+2026-02-05 22:40:48 | INFO | metamind | Evaluation run: method=som rep=1/5 seed=42
+2026-02-05 22:40:48 | INFO | metamind | Eval progress: iter=0 best=0.5181375971725337 metrics={'quantization_error': 0.5181375971725337}
+2026-02-05 22:40:48 | INFO | metamind | Evaluation run: method=som rep=2/5 seed=43
+2026-02-05 22:40:48 | INFO | metamind | Eval progress: iter=0 best=0.5254601160671686 metrics={'quantization_error': 0.5254601160671686}
+2026-02-05 22:40:49 | INFO | metamind | Evaluation run: method=som rep=3/5 seed=44
+2026-02-05 22:40:49 | INFO | metamind | Eval progress: iter=0 best=0.5327795277791949 metrics={'quantization_error': 0.5327795277791949}
+2026-02-05 22:40:49 | INFO | metamind | Evaluation run: method=som rep=4/5 seed=45
+2026-02-05 22:40:49 | INFO | metamind | Eval progress: iter=0 best=0.5139854955108537 metrics={'quantization_error': 0.5139854955108537}
+2026-02-05 22:40:50 | INFO | metamind | Evaluation run: method=som rep=5/5 seed=46
+2026-02-05 22:40:50 | INFO | metamind | Eval progress: iter=0 best=0.5546072263334113 metrics={'quantization_error': 0.5546072263334113}
+2026-02-05 22:40:51 | INFO | metamind | Evaluation finished. Outputs in: D:\UN\7th_Semester_Contents\Computational_Intelligence\Project\v6\results\20260205_191029_7a800357\evaluation
+2026-02-05 22:40:51 | INFO | metamind | Feedback round 1: action=switch_method conf=0.70
+2026-02-05 22:40:51 | INFO | metamind | Feedback round 2: action=switch_method conf=0.70
+2026-02-05 22:40:51 | INFO | metamind | Feedback round 3: action=switch_method conf=0.70
+2026-02-05 22:40:51 | INFO | metamind | Evaluation run finished successfully.

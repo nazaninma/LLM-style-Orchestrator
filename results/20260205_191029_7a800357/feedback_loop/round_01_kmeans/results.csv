@@ -1,0 +1,2 @@
+run_id,timestamp_utc,seed,problem_name,method_name,notes,metric__inertia,metric__silhouette,metric__time_sec,metric__iterations_completed
+round_01_kmeans,,43,blobs,kmeans,kmeans clustering,280.4887224350871,0.3193195397577362,0.06577253341674805,5.0

@@ -1,0 +1,32 @@
+2026-02-05 22:25:25 | INFO | metamind.utils.logging | Logging initialized. File=D:\UN\7th_Semester_Contents\Computational_Intelligence\Project\v6\results\logs\20260205_185525_108ea64b.log
+2026-02-05 22:25:25 | INFO | metamind | Run started. run_id=20260205_185525_108ea64b
+2026-02-05 22:25:25 | INFO | metamind | Config file: D:\UN\7th_Semester_Contents\Computational_Intelligence\Project\v6\configs\titanic_eval.yaml
+2026-02-05 22:25:25 | INFO | metamind | Config: seed=42, default_problem=titanic, default_method=perceptron
+2026-02-05 22:25:25 | INFO | metamind | Settings: {'problem_type': 'classification', 'problem_meta': {'dataset': 'titanic', 'train_csv': 'data/titanic/train.csv', 'split': [0.7, 0.15, 0.15], 'standardize': True}, 'method_params': {'hidden_layers': [16, 16], 'lr': 0.05, 'epochs': 200}, 'llm': {'enabled': False, 'provider': 'openai', 'model': 'gpt-4.1-mini', 'api_key_env': 'METIS_API_KEY', 'base_url': 'https://api.metisai.ir/openai/v1', 'temperature': 0.1}, 'evaluation': {'enabled': True, 'repeats': 5, 'methods': ['perceptron', 'mlp'], 'make_plots': True, 'save_per_run': True}, 'feedback_loop': {'enabled': True, 'max_rounds': 3, 'min_confidence': 0.55}}
+2026-02-05 22:25:25 | INFO | metamind | Available methods: ['aco', 'fuzzy', 'ga', 'ga_tsp', 'gp', 'hopfield', 'kmeans', 'mlp', 'noop', 'perceptron', 'pso', 'random_search', 'som']
+2026-02-05 22:25:25 | INFO | metamind | Decision: {'problem_type': 'classification', 'selected_method': 'mlp', 'reasoning': 'Classification: MLP is usually stronger than a linear perceptron; perceptron as backup.', 'parameters': {'hidden_sizes': [16, 8], 'max_epochs': 400, 'lr': 0.01, 'batch_size': 32}, 'backup_method': 'perceptron', 'confidence': 0.82}
+2026-02-05 22:25:26 | INFO | metamind | Evaluation run: method=perceptron rep=1/5 seed=42
+2026-02-05 22:25:26 | INFO | metamind | Eval progress: iter=0 best=0.24444444444444446 metrics={'test_accuracy': 0.7555555555555555, 'test_error': 0.24444444444444446}
+2026-02-05 22:25:26 | INFO | metamind | Evaluation run: method=perceptron rep=2/5 seed=43
+2026-02-05 22:25:26 | INFO | metamind | Eval progress: iter=0 best=0.2222222222222222 metrics={'test_accuracy': 0.7777777777777778, 'test_error': 0.2222222222222222}
+2026-02-05 22:25:26 | INFO | metamind | Evaluation run: method=perceptron rep=3/5 seed=44
+2026-02-05 22:25:26 | INFO | metamind | Eval progress: iter=0 best=0.3037037037037037 metrics={'test_accuracy': 0.6962962962962963, 'test_error': 0.3037037037037037}
+2026-02-05 22:25:26 | INFO | metamind | Evaluation run: method=perceptron rep=4/5 seed=45
+2026-02-05 22:25:26 | INFO | metamind | Eval progress: iter=0 best=0.2666666666666667 metrics={'test_accuracy': 0.7333333333333333, 'test_error': 0.2666666666666667}
+2026-02-05 22:25:27 | INFO | metamind | Evaluation run: method=perceptron rep=5/5 seed=46
+2026-02-05 22:25:27 | INFO | metamind | Eval progress: iter=0 best=0.31851851851851853 metrics={'test_accuracy': 0.6814814814814815, 'test_error': 0.31851851851851853}
+2026-02-05 22:25:27 | INFO | metamind | Evaluation run: method=mlp rep=1/5 seed=42
+2026-02-05 22:25:27 | INFO | metamind | Eval progress: iter=0 best=0.6561934413692783 metrics={'loss': 0.6561934413692783, 'test_accuracy': 0.7037037037037037}
+2026-02-05 22:25:27 | INFO | metamind | Evaluation run: method=mlp rep=2/5 seed=43
+2026-02-05 22:25:27 | INFO | metamind | Eval progress: iter=0 best=0.6674184880343127 metrics={'loss': 0.6674184880343127, 'test_accuracy': 0.7111111111111111}
+2026-02-05 22:25:27 | INFO | metamind | Evaluation run: method=mlp rep=3/5 seed=44
+2026-02-05 22:25:27 | INFO | metamind | Eval progress: iter=0 best=0.6456578251582675 metrics={'loss': 0.6456578251582675, 'test_accuracy': 0.674074074074074}
+2026-02-05 22:25:27 | INFO | metamind | Evaluation run: method=mlp rep=4/5 seed=45
+2026-02-05 22:25:27 | INFO | metamind | Eval progress: iter=0 best=0.6515645407850075 metrics={'loss': 0.6515645407850075, 'test_accuracy': 0.6444444444444445}
+2026-02-05 22:25:28 | INFO | metamind | Evaluation run: method=mlp rep=5/5 seed=46
+2026-02-05 22:25:28 | INFO | metamind | Eval progress: iter=0 best=0.6540968540706373 metrics={'loss': 0.6540968540706373, 'test_accuracy': 0.6592592592592592}
+2026-02-05 22:25:28 | INFO | metamind | Evaluation finished. Outputs in: D:\UN\7th_Semester_Contents\Computational_Intelligence\Project\v6\results\20260205_185525_108ea64b\evaluation
+2026-02-05 22:25:28 | INFO | metamind | Feedback round 1: action=switch_method conf=0.70
+2026-02-05 22:25:28 | INFO | metamind | Feedback round 2: action=switch_method conf=0.70
+2026-02-05 22:25:28 | INFO | metamind | Feedback round 3: action=switch_method conf=0.70
+2026-02-05 22:25:28 | INFO | metamind | Evaluation run finished successfully.

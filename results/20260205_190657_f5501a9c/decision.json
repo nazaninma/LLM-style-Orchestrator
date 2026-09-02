@@ -1,0 +1,13 @@
+{
+  "problem_type": "clustering",
+  "selected_method": "kmeans",
+  "reasoning": "K-means is suitable for clustering tasks, especially with well-separated clusters like in the Iris dataset.",
+  "parameters": {
+    "n_clusters": 3,
+    "max_iter": 300,
+    "tol": 0.0001,
+    "init": "k-means++"
+  },
+  "backup_method": null,
+  "confidence": 0.9
+}

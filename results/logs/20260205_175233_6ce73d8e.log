@@ -1,0 +1,71 @@
+2026-02-05 21:22:33 | INFO | metamind.utils.logging | Logging initialized. File=D:\UN\7th_Semester_Contents\Computational_Intelligence\Project\v6\results\logs\20260205_175233_6ce73d8e.log
+2026-02-05 21:22:33 | INFO | metamind | Run started. run_id=20260205_175233_6ce73d8e
+2026-02-05 21:22:33 | INFO | metamind | Config file: D:\UN\7th_Semester_Contents\Computational_Intelligence\Project\v6\configs\rosenbrock_eval.yaml
+2026-02-05 21:22:33 | INFO | metamind | Config: seed=42, default_problem=rosenbrock, default_method=ga
+2026-02-05 21:22:33 | INFO | metamind | Settings: {'problem_type': 'function_optimization', 'problem_meta': {'function': 'rosenbrock', 'dimension': 30}, 'early_stopping': {'enabled': True, 'patience': 80, 'min_delta': '1e-8'}, 'method_params': {'max_iterations': 500}, 'llm': {'enabled': True, 'provider': 'openai', 'model': 'gpt-4o-mini', 'api_key_env': 'METIS_API_KEY', 'base_url': 'https://api.metisai.ir/openai/v1', 'temperature': 0.1}, 'evaluation': {'enabled': True, 'repeats': 5, 'methods': ['ga', 'gp', 'pso', 'fuzzy', 'random_search'], 'make_plots': True, 'save_per_run': True}}
+2026-02-05 21:22:33 | INFO | metamind | Available methods: ['aco', 'fuzzy', 'ga', 'ga_tsp', 'gp', 'hopfield', 'kmeans', 'mlp', 'noop', 'perceptron', 'pso', 'random_search', 'som']
+2026-02-05 21:22:34 | INFO | metamind | LLM enabled for orchestrator: provider=openai model=gpt-4o-mini api_key_env=METIS_API_KEY
+2026-02-05 21:22:59 | INFO | httpx | HTTP Request: POST https://api.metisai.ir/openai/v1/responses "HTTP/1.1 200 "
+2026-02-05 21:22:59 | INFO | metamind | Decision: {'problem_type': 'function_optimization', 'selected_method': 'pso', 'reasoning': 'Particle Swarm Optimization (PSO) is well-suited for continuous optimization problems like the Rosenbrock function due to its ability to explore the search space effectively and converge towards the global optimum.', 'parameters': {'swarm_size': 100, 'max_iterations': 1000, 'c1': 1.5, 'c2': 1.5, 'inertia_weight': 0.7}, 'backup_method': 'ga', 'confidence': 0.85}
+2026-02-05 21:22:59 | INFO | metamind | Evaluation run: method=ga rep=1/5 seed=42
+2026-02-05 21:22:59 | INFO | metamind | Eval progress: iter=0 best=1107452.6836807933 metrics={'best_fitness': 1107452.6836807933}
+2026-02-05 21:23:00 | INFO | metamind | Evaluation run: method=ga rep=2/5 seed=43
+2026-02-05 21:23:00 | INFO | metamind | Eval progress: iter=0 best=809414.4116000712 metrics={'best_fitness': 809414.4116000712}
+2026-02-05 21:23:01 | INFO | metamind | Evaluation run: method=ga rep=3/5 seed=44
+2026-02-05 21:23:01 | INFO | metamind | Eval progress: iter=0 best=876275.2808411989 metrics={'best_fitness': 876275.2808411989}
+2026-02-05 21:23:02 | INFO | metamind.methods.ga_continuous | GA early stopping at gen=384 best=295.22232601308286
+2026-02-05 21:23:02 | INFO | metamind | Evaluation run: method=ga rep=4/5 seed=45
+2026-02-05 21:23:02 | INFO | metamind | Eval progress: iter=0 best=1322388.3644174072 metrics={'best_fitness': 1322388.3644174072}
+2026-02-05 21:23:02 | INFO | metamind | Evaluation run: method=ga rep=5/5 seed=46
+2026-02-05 21:23:02 | INFO | metamind | Eval progress: iter=0 best=930312.408319697 metrics={'best_fitness': 930312.408319697}
+2026-02-05 21:23:03 | INFO | metamind | Evaluation run: method=gp rep=1/5 seed=42
+2026-02-05 21:23:03 | INFO | metamind | Eval progress: iter=0 best=0.0 metrics={}
+2026-02-05 21:23:03 | INFO | metamind | Evaluation run: method=gp rep=2/5 seed=43
+2026-02-05 21:23:03 | INFO | metamind | Eval progress: iter=0 best=0.09324769552987379 metrics={}
+2026-02-05 21:23:03 | INFO | metamind | Evaluation run: method=gp rep=3/5 seed=44
+2026-02-05 21:23:03 | INFO | metamind | Eval progress: iter=0 best=0.08399300445962962 metrics={}
+2026-02-05 21:23:03 | INFO | metamind | Evaluation run: method=gp rep=4/5 seed=45
+2026-02-05 21:23:03 | INFO | metamind | Eval progress: iter=0 best=2.4367589308082596 metrics={}
+2026-02-05 21:23:03 | INFO | metamind | Evaluation run: method=gp rep=5/5 seed=46
+2026-02-05 21:23:03 | INFO | metamind | Eval progress: iter=0 best=0.011642509387976055 metrics={}
+2026-02-05 21:23:04 | INFO | metamind | Evaluation run: method=pso rep=1/5 seed=42
+2026-02-05 21:23:04 | INFO | metamind | Eval progress: iter=0 best=803985.7880221857 metrics={'best_fitness': 803985.7880221857}
+2026-02-05 21:23:04 | INFO | metamind.methods.pso | PSO early stopping at iter=363 best=314.06783932079446
+2026-02-05 21:23:04 | INFO | metamind | Evaluation run: method=pso rep=2/5 seed=43
+2026-02-05 21:23:04 | INFO | metamind | Eval progress: iter=0 best=1233891.6572570961 metrics={'best_fitness': 1233891.6572570961}
+2026-02-05 21:23:04 | INFO | metamind.methods.pso | PSO early stopping at iter=470 best=307.8575008354508
+2026-02-05 21:23:04 | INFO | metamind | Evaluation run: method=pso rep=3/5 seed=44
+2026-02-05 21:23:04 | INFO | metamind | Eval progress: iter=0 best=1341157.1762133935 metrics={'best_fitness': 1341157.1762133935}
+2026-02-05 21:23:05 | INFO | metamind | Evaluation run: method=pso rep=4/5 seed=45
+2026-02-05 21:23:05 | INFO | metamind | Eval progress: iter=0 best=1266295.435182144 metrics={'best_fitness': 1266295.435182144}
+2026-02-05 21:23:05 | INFO | metamind.methods.pso | PSO early stopping at iter=394 best=913.6091015933172
+2026-02-05 21:23:05 | INFO | metamind | Evaluation run: method=pso rep=5/5 seed=46
+2026-02-05 21:23:05 | INFO | metamind | Eval progress: iter=0 best=1376873.6980112863 metrics={'best_fitness': 1376873.6980112863}
+2026-02-05 21:23:05 | INFO | metamind.methods.pso | PSO early stopping at iter=358 best=404.0006366841838
+2026-02-05 21:23:05 | INFO | metamind | Evaluation run: method=fuzzy rep=1/5 seed=42
+2026-02-05 21:23:05 | INFO | metamind | Eval progress: iter=0 best=2726292.0067050066 metrics={'step': 1e-06}
+2026-02-05 21:23:05 | INFO | metamind | Evaluation run: method=fuzzy rep=2/5 seed=43
+2026-02-05 21:23:05 | INFO | metamind | Eval progress: iter=0 best=1735808.6925886953 metrics={'step': 1e-06}
+2026-02-05 21:23:05 | INFO | metamind | Evaluation run: method=fuzzy rep=3/5 seed=44
+2026-02-05 21:23:05 | INFO | metamind | Eval progress: iter=0 best=3800528.78189503 metrics={'step': 1e-06}
+2026-02-05 21:23:05 | INFO | metamind | Evaluation run: method=fuzzy rep=4/5 seed=45
+2026-02-05 21:23:05 | INFO | metamind | Eval progress: iter=0 best=3043994.897197037 metrics={'step': 1e-06}
+2026-02-05 21:23:05 | INFO | metamind | Evaluation run: method=fuzzy rep=5/5 seed=46
+2026-02-05 21:23:05 | INFO | metamind | Eval progress: iter=0 best=5309508.296749279 metrics={'step': 1e-06}
+2026-02-05 21:23:05 | INFO | metamind | Evaluation run: method=random_search rep=1/5 seed=42
+2026-02-05 21:23:05 | INFO | metamind | Eval progress: iter=0 best=2726292.0067050066 metrics={'best_fitness': 2726292.0067050066}
+2026-02-05 21:23:05 | INFO | metamind.methods.random_search | Early stopping triggered at i=143 best_f=1124092.6508312144
+2026-02-05 21:23:05 | INFO | metamind | Evaluation run: method=random_search rep=2/5 seed=43
+2026-02-05 21:23:05 | INFO | metamind | Eval progress: iter=0 best=1735808.6925886953 metrics={'best_fitness': 1735808.6925886953}
+2026-02-05 21:23:05 | INFO | metamind.methods.random_search | Early stopping triggered at i=183 best_f=962342.0950946269
+2026-02-05 21:23:05 | INFO | metamind | Evaluation run: method=random_search rep=3/5 seed=44
+2026-02-05 21:23:05 | INFO | metamind | Eval progress: iter=0 best=3800528.78189503 metrics={'best_fitness': 3800528.78189503}
+2026-02-05 21:23:05 | INFO | metamind.methods.random_search | Early stopping triggered at i=89 best_f=1360189.6123121982
+2026-02-05 21:23:05 | INFO | metamind | Evaluation run: method=random_search rep=4/5 seed=45
+2026-02-05 21:23:05 | INFO | metamind | Eval progress: iter=0 best=3043994.897197037 metrics={'best_fitness': 3043994.897197037}
+2026-02-05 21:23:05 | INFO | metamind.methods.random_search | Early stopping triggered at i=172 best_f=1322388.3644174072
+2026-02-05 21:23:05 | INFO | metamind | Evaluation run: method=random_search rep=5/5 seed=46
+2026-02-05 21:23:05 | INFO | metamind | Eval progress: iter=0 best=5309508.296749279 metrics={'best_fitness': 5309508.296749279}
+2026-02-05 21:23:05 | INFO | metamind.methods.random_search | Early stopping triggered at i=133 best_f=940415.1265206466
+2026-02-05 21:23:05 | INFO | metamind | Evaluation finished. Outputs in: D:\UN\7th_Semester_Contents\Computational_Intelligence\Project\v6\results\20260205_175233_6ce73d8e\evaluation
+2026-02-05 21:23:05 | INFO | metamind | Evaluation run finished successfully.

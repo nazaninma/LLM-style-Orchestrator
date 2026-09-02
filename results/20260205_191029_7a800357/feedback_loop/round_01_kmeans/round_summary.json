@@ -1,0 +1,20 @@
+{
+  "round": 1,
+  "method": "kmeans",
+  "params": {
+    "k": 4,
+    "max_iterations": 300
+  },
+  "result": {
+    "metrics": {
+      "inertia": 280.4887224350871,
+      "silhouette": 0.3193195397577362,
+      "time_sec": 0.06577253341674805,
+      "iterations_completed": 5.0
+    },
+    "artifacts": {},
+    "notes": "kmeans clustering",
+    "method": "kmeans",
+    "seed": 43
+  }
+}

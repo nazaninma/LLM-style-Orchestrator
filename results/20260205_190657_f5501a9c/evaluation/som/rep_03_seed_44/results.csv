@@ -1,0 +1,2 @@
+run_id,timestamp_utc,seed,problem_name,method_name,notes,metric__quantization_error,metric__time_sec,metric__iterations_completed
+rep_03_seed_44,,44,iris,som,som clustering,0.04517473751456691,0.224853515625,100.0

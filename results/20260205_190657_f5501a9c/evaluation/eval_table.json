@@ -1,0 +1,36 @@
+{
+  "rows": [
+    {
+      "method": "kmeans",
+      "n_runs": 5,
+      "n_success": 5,
+      "success_rate": 1.0,
+      "primary_metric": "silhouette",
+      "primary_mean": 0.45926477471344695,
+      "primary_std": 0.0016314349710006202,
+      "primary_ci_low": 0.45783475891100406,
+      "primary_ci_high": 0.46069479051588985,
+      "maximize": true,
+      "time_sec_mean": 0.015086746215820313,
+      "time_sec_std": 0.0013758670137649328,
+      "inertia_mean": 141.00502632599319,
+      "inertia_std": 0.08338577722989658,
+      "silhouette_mean": 0.45926477471344695,
+      "silhouette_std": 0.0016314349710006202
+    },
+    {
+      "method": "som",
+      "n_runs": 5,
+      "n_success": 5,
+      "success_rate": 1.0,
+      "primary_metric": "silhouette",
+      "primary_mean": 0.0,
+      "primary_std": 0.0,
+      "primary_ci_low": 0.0,
+      "primary_ci_high": 0.0,
+      "maximize": true,
+      "time_sec_mean": 0.2294095516204834,
+      "time_sec_std": 0.004516549834786031
+    }
+  ]
+}

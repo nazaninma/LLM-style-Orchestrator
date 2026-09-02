@@ -1,0 +1,68 @@
+{
+  "problem_name": "blobs",
+  "problem_type": "clustering",
+  "repeats": 5,
+  "methods": [
+    "kmeans",
+    "som"
+  ],
+  "stats": [
+    {
+      "method": "kmeans",
+      "primary_metric": "silhouette",
+      "primary_mean": 0.3177185821598195,
+      "primary_std": 0.0016479153538412788,
+      "primary_ci_low": 0.31627412066489646,
+      "primary_ci_high": 0.3191630436547426,
+      "maximize": true,
+      "n_runs": 5,
+      "n_success": 5,
+      "n_fail": 0,
+      "success_rate": 1.0,
+      "metrics_mean": {
+        "inertia": 280.1751099376146,
+        "iterations_completed": 5.0,
+        "silhouette": 0.3177185821598195,
+        "time_sec": 0.06507554054260253
+      },
+      "metrics_std": {
+        "inertia": 0.48616548828393435,
+        "iterations_completed": 0.0,
+        "silhouette": 0.0016479153538412788,
+        "time_sec": 0.0018008903506331558
+      }
+    },
+    {
+      "method": "som",
+      "primary_metric": "silhouette",
+      "primary_mean": 0.0,
+      "primary_std": 0.0,
+      "primary_ci_low": 0.0,
+      "primary_ci_high": 0.0,
+      "maximize": true,
+      "n_runs": 5,
+      "n_success": 5,
+      "n_fail": 0,
+      "success_rate": 1.0,
+      "metrics_mean": {
+        "iterations_completed": 100.0,
+        "quantization_error": 0.026593066883973025,
+        "time_sec": 0.6042368888854981
+      },
+      "metrics_std": {
+        "iterations_completed": 0.0,
+        "quantization_error": 0.0013779494390276903,
+        "time_sec": 0.004095986410297014
+      }
+    }
+  ],
+  "wilcoxon_vs_best": {
+    "som": {
+      "p_value": null,
+      "n_pairs": 0,
+      "best_method": "kmeans",
+      "metric": "silhouette",
+      "maximize": true
+    }
+  }
+}
