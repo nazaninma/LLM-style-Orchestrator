@@ -1,0 +1,117 @@
+Metadata-Version: 2.4
+Name: metamind
+Version: 0.1.0
+Summary: MetaMind: CI methods + LLM-style orchestrator
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: pyyaml>=6.0.1
+Requires-Dist: numpy>=1.24
+Requires-Dist: matplotlib>=3.7
+Requires-Dist: scipy>=1.10
+Requires-Dist: pandas>=2.0
+Requires-Dist: scikit-learn>=1.3
+Requires-Dist: openai>=1.0.0
+
+# MetaMind
+
+MetaMind is a unified **Computational Intelligence (CI)** framework + an **LLM-style Orchestrator** that:
+1) parses a problem (TSP / function optimization / classification / clustering),
+2) selects a suitable CI method + parameters,
+3) runs the method via a standardized API,
+4) evaluates, logs, and (optionally) runs a feedback loop.
+
+## Quickstart
+
+```bash
+python -m venv .venv
+# Windows: .venv\Scripts\activate
+# Linux/Mac: source .venv/bin/activate
+pip install -r requirements.txt
+
+# recommended (so `python -m metamind.main` works reliably)
+pip install -e .
+```
+
+Run a simple smoke test:
+
+```bash
+python -m metamind.main --config configs/example.yaml
+```
+
+Run built-in evaluations:
+
+```bash
+# Function optimization (Rastrigin)
+python -m metamind.main --config configs/rastrigin_eval.yaml
+
+# Clustering (Iris)
+python -m metamind.main --config configs/iris_eval.yaml
+
+# TSP (TSPLIB)
+python -m metamind.main --config configs/tsp_eval.yaml
+
+# Hopfield-TSP demo
+python -m metamind.main --config configs/tsp_hopfield_eval.yaml
+
+# Fuzzy-controller demo
+python -m metamind.main --config configs/sphere_fuzzy_eval.yaml
+```
+
+Results are stored under `results/<run_id>/` as JSON/CSV plus optional plots and aggregate summaries.
+
+## Supported methods (standardized API)
+
+Baselines:
+- `noop`
+- `random_search`
+
+Continuous optimization:
+- `pso` (Particle Swarm Optimization)
+- `ga` (Genetic Algorithm)
+- `gp` (Genetic-Programming-style program evolution for candidate generation)
+- `fuzzy` (Fuzzy-controller stochastic hill-climber)
+
+TSP:
+- `aco` (Ant Colony Optimization)
+- `ga_tsp` (Permutation GA for TSP)
+- `hopfield` (Hopfield-Tank style network for TSP)
+
+ML:
+- `perceptron`
+- `mlp`
+- `som` (Kohonen)
+- `kmeans`
+
+## Config structure (YAML)
+
+Key fields:
+- `default_problem`, `default_method`
+- `settings.problem_type`: `tsp` | `function_optimization` | `classification` | `clustering`
+- `settings.problem_meta`: problem-specific settings (dataset paths, function name, dimension, ...)
+- `settings.method_params`: method parameters (override orchestrator suggestions)
+- `settings.evaluation`: batch evaluation controls (repeats, methods list, plots, ...)
+
+See `configs/*.yaml` for examples.
+
+## Using a real LLM (OpenAI)
+
+This project includes an optional OpenAI-backed orchestrator. To enable it:
+
+```bash
+export OPENAI_API_KEY="your_key_here"
+```
+
+Then, in your config:
+
+```yaml
+settings:
+  llm:
+    enabled: true
+    provider: openai
+    model: gpt-4o-mini
+```
+
+If the key is missing or initialization fails, MetaMind automatically falls back to the heuristic orchestrator.
+
+## Notes
+- This repository is intentionally lightweight for CI methods; the OpenAI SDK is only used when `settings.llm.enabled` is true.
