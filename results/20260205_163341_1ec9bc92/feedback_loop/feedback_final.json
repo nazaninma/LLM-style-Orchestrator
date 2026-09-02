@@ -1,0 +1,28 @@
+{
+  "final_method": "aco",
+  "final_params": {
+    "n_iterations": 300,
+    "generations": 600,
+    "max_iterations": 200
+  },
+  "history": [
+    {
+      "round": 1,
+      "action": "switch_method",
+      "method": "aco",
+      "reason": "Evaluation suggests best method='aco' based on primary metric."
+    },
+    {
+      "round": 2,
+      "action": "switch_method",
+      "method": "aco",
+      "reason": "Evaluation suggests best method='aco' based on primary metric."
+    },
+    {
+      "round": 3,
+      "action": "switch_method",
+      "method": "aco",
+      "reason": "Evaluation suggests best method='aco' based on primary metric."
+    }
+  ]
+}

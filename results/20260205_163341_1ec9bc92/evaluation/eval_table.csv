@@ -1,0 +1,4 @@
+best_fitness_mean,best_fitness_std,maximize,method,n_iterations_mean,n_iterations_std,n_runs,n_success,primary_ci_high,primary_ci_low,primary_mean,primary_metric,primary_std,success_rate,time_sec_mean,time_sec_std
+,,False,aco,,,5,0,243.0,243.0,243.0,tour_length,0.0,0.0,27.721172475814818,7.121137480073719
+,,False,ga_tsp,,,5,0,243.0,243.0,243.0,tour_length,0.0,0.0,99.82664060592651,36.838785005308516
+501.2,5.215361924162119,False,hopfield,200.0,0.0,5,0,505.7714662855587,496.6285337144413,501.2,tour_length,5.215361924162119,0.0,0.0343080997467041,0.004460835273925617

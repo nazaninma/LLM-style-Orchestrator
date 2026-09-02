@@ -1,0 +1,27 @@
+{
+  "round": 3,
+  "method": "aco",
+  "params": {
+    "n_iterations": 300,
+    "generations": 600,
+    "max_iterations": 200
+  },
+  "result": {
+    "metrics": {
+      "tour_length": 243.0,
+      "time_sec": 44.24707102775574,
+      "iterations_completed": 301.0,
+      "gap_to_optimal_percent": -42.95774647887324
+    },
+    "artifacts": {
+      "convergence_history": {
+        "len": 301,
+        "first": 571.0,
+        "last": 243.0
+      }
+    },
+    "notes": "aco tsp",
+    "method": "aco",
+    "seed": 45
+  }
+}
