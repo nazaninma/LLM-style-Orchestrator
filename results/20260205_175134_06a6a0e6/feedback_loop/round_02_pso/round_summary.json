@@ -1,0 +1,31 @@
+{
+  "round": 2,
+  "method": "pso",
+  "params": {
+    "n_particles": 40,
+    "max_iterations": 300,
+    "w": 0.7,
+    "c1": 1.5,
+    "c2": 1.5,
+    "w_decay": true,
+    "velocity_clamp": 0.5
+  },
+  "result": {
+    "metrics": {
+      "best_fitness": 59.753619219473194,
+      "time_sec": 0.14786863327026367,
+      "iterations_completed": 280.0
+    },
+    "artifacts": {
+      "convergence_history": {
+        "len": 280,
+        "first": 461.7346403840527,
+        "last": 59.753619219473194
+      },
+      "checkpoint_path": "D:\\UN\\7th_Semester_Contents\\Computational_Intelligence\\Project\\v6\\results\\20260205_175134_06a6a0e6\\feedback_loop\\round_02_pso\\pso_ckpt.json"
+    },
+    "notes": "pso continuous optimizer",
+    "method": "pso",
+    "seed": 44
+  }
+}

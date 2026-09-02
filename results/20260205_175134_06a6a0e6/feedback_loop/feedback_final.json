@@ -1,0 +1,32 @@
+{
+  "final_method": "pso",
+  "final_params": {
+    "n_particles": 40,
+    "max_iterations": 300,
+    "w": 0.7,
+    "c1": 1.5,
+    "c2": 1.5,
+    "w_decay": true,
+    "velocity_clamp": 0.5
+  },
+  "history": [
+    {
+      "round": 1,
+      "action": "switch_method",
+      "method": "pso",
+      "reason": "Evaluation suggests best method='pso' based on primary metric."
+    },
+    {
+      "round": 2,
+      "action": "switch_method",
+      "method": "pso",
+      "reason": "Evaluation suggests best method='pso' based on primary metric."
+    },
+    {
+      "round": 3,
+      "action": "switch_method",
+      "method": "pso",
+      "reason": "Evaluation suggests best method='pso' based on primary metric."
+    }
+  ]
+}

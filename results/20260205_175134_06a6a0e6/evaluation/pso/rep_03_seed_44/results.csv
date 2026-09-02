@@ -1,0 +1,2 @@
+run_id,timestamp_utc,seed,problem_name,method_name,notes,metric__best_fitness,metric__time_sec,metric__iterations_completed
+rep_03_seed_44,,44,rastrigin,pso,pso continuous optimizer,59.753619219473194,0.17026019096374512,280.0
