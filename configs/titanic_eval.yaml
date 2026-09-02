@@ -1,0 +1,42 @@
+seed: 42
+log_level: INFO
+results_dir: results
+default_problem: titanic
+default_method: perceptron
+
+settings:
+  problem_type: classification
+  problem_meta:
+    dataset: titanic
+    train_csv: data/titanic/train.csv
+    split: [0.7, 0.15, 0.15]
+    standardize: true
+
+  method_params:
+    # basic sensible defaults; orchestrator may override in non-eval mode
+    hidden_layers: [16, 16]
+    lr: 0.05
+    epochs: 200
+  
+  llm:
+    enabled: false
+    provider: openai
+    model: gpt-4.1-mini
+    api_key_env: METIS_API_KEY
+    base_url: https://api.metisai.ir/openai/v1
+    temperature: 0.1
+
+
+  evaluation:
+    enabled: true
+    repeats: 5
+    methods: ["perceptron", "mlp"]
+    make_plots: true
+    save_per_run: true
+
+  feedback_loop:
+    enabled: true
+    max_rounds: 3
+    min_confidence: 0.55
+
+

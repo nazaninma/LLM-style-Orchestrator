@@ -1,0 +1,40 @@
+seed: 42
+log_level: INFO
+results_dir: results
+default_problem: ackley
+default_method: pso
+
+settings:
+  problem_type: function_optimization
+  problem_meta:
+    function: ackley
+    dimension: 20
+
+  early_stopping:
+    enabled: true
+    patience: 50
+    min_delta: 1e-8
+
+  method_params:
+    max_iterations: 400
+  
+  llm:
+    enabled: true
+    provider: openai
+    # model: gpt-4o
+    model: gpt-3.5-turbo-0125
+    api_key_env: METIS_API_KEY
+    base_url: https://api.metisai.ir/openai/v1
+    temperature: 0.1
+
+  evaluation:
+    enabled: true
+    repeats: 5
+    methods: ["pso", "ga", "gp", "fuzzy", "random_search"]
+    make_plots: true
+    save_per_run: true
+  
+  feedback_loop:
+    enabled: true
+    max_rounds: 3
+    min_confidence: 0.55

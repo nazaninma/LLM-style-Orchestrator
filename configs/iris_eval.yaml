@@ -1,0 +1,38 @@
+seed: 42
+log_level: INFO
+results_dir: results
+default_problem: iris
+default_method: kmeans
+
+settings:
+  problem_type: clustering
+  problem_meta:
+    dataset: iris
+    csv: data/iris/iris.csv
+    feature_cols: ["sepal_length", "sepal_width", "petal_length", "petal_width"]
+    label_col: species
+    standardize: true
+
+  method_params:
+    k: 3
+    max_iterations: 200
+  
+  llm:
+    enabled: true
+    provider: openai
+    model: gpt-4o-mini
+    api_key_env: METIS_API_KEY
+    base_url: https://api.metisai.ir/openai/v1
+    temperature: 0.1
+
+  evaluation:
+    enabled: true
+    repeats: 5
+    methods: ["kmeans", "som"]
+    make_plots: true
+    save_per_run: true
+
+  feedback_loop:
+    enabled: true
+    max_rounds: 3
+    min_confidence: 0.55

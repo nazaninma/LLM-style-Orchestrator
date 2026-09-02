@@ -1,0 +1,32 @@
+seed: 42
+log_level: INFO
+results_dir: results
+default_problem: tsp
+default_method: hopfield
+
+settings:
+  problem_type: tsp
+  problem_meta:
+    source: tsplib
+    data_dir: data/tsplib
+    problem_id: eil51
+
+  method_params:
+    max_iterations: 2500
+    report_every: 100
+    temperature: 0.6
+
+  llm:
+    enabled: true
+    provider: openai
+    model: gpt-4o-mini
+    api_key_env: METIS_API_KEY
+    base_url: https://api.metisai.ir/openai/v1
+    temperature: 0.1
+
+  evaluation:
+    enabled: true
+    repeats: 5
+    methods: ["hopfield", "aco", "ga_tsp"]
+    make_plots: true
+    save_per_run: true

@@ -1,0 +1,40 @@
+seed: 42
+log_level: INFO
+results_dir: results
+default_problem: blobs
+default_method: som
+
+settings:
+  problem_type: clustering
+  problem_meta:
+    source: generated
+    dataset: blobs
+    n_samples: 400
+    n_features: 2
+    centers: 4
+    cluster_std: 0.9
+    standardize: true
+
+  method_params:
+    k: 4
+    max_iterations: 300
+
+  llm:
+    enabled: true
+    provider: openai
+    model: gpt-4o-mini
+    api_key_env: METIS_API_KEY
+    base_url: https://api.metisai.ir/openai/v1
+    temperature: 0.1
+
+  evaluation:
+    enabled: true
+    repeats: 5
+    methods: ["kmeans", "som"]
+    make_plots: true
+    save_per_run: true
+
+  feedback_loop:
+    enabled: true
+    max_rounds: 3
+    min_confidence: 0.55

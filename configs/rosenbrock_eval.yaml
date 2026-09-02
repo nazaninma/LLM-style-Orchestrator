@@ -1,0 +1,34 @@
+seed: 42
+log_level: INFO
+results_dir: results
+default_problem: rosenbrock
+default_method: ga
+
+settings:
+  problem_type: function_optimization
+  problem_meta:
+    function: rosenbrock
+    dimension: 30
+
+  early_stopping:
+    enabled: true
+    patience: 80
+    min_delta: 1e-8
+
+  method_params:
+    max_iterations: 500
+  
+  llm:
+    enabled: false
+    provider: openai
+    model: gpt-4o-mini
+    api_key_env: METIS_API_KEY
+    base_url: https://api.metisai.ir/openai/v1
+    temperature: 0.1
+
+  evaluation:
+    enabled: true
+    repeats: 5
+    methods: ["ga", "gp", "pso", "fuzzy", "random_search"]
+    make_plots: true
+    save_per_run: true

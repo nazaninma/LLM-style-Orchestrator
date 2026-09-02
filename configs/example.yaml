@@ -1,0 +1,34 @@
+seed: 42
+log_level: INFO
+results_dir: results
+default_problem: sphere
+default_method: pso
+
+settings:
+  # Optional: enable a REAL LLM for method selection, parameter suggestions,
+  # and result interpretation.
+  #
+  # Recommended: set your API key via environment variable:
+  #   export OPENAI_API_KEY="..."
+  # Then set enabled: true.
+  llm:
+    enabled: false
+    provider: openai
+    model: gpt-4o-mini
+    temperature: 0.2
+    max_output_tokens: 800
+    api_key_env: OPENAI_API_KEY
+    # base_url: https://api.openai.com/v1  # optional override
+
+  problem_type: function_optimization
+  problem_meta:
+    function: sphere
+    dimension: 10
+
+  # You can override orchestrator choice:
+  # force_method: true
+
+  method_params: {}
+
+  evaluation:
+    enabled: false

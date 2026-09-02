@@ -1,0 +1,35 @@
+seed: 42
+log_level: INFO
+results_dir: results
+default_problem: sphere
+default_method: fuzzy
+
+settings:
+  problem_type: function_optimization
+  problem_meta:
+    function: sphere
+    dimension: 20
+
+  early_stopping:
+    enabled: true
+    patience: 100
+    min_delta: 1e-10
+
+  method_params:
+    max_iterations: 3000
+    step0: 0.5
+
+  llm:
+    enabled: true
+    provider: openai
+    model: gpt-4o-mini
+    api_key_env: METIS_API_KEY
+    base_url: https://api.metisai.ir/openai/v1
+    temperature: 0.1
+
+  evaluation:
+    enabled: true
+    repeats: 5
+    methods: ["fuzzy", "pso", "ga", "gp", "random_search"]
+    make_plots: true
+    save_per_run: true

@@ -1,0 +1,40 @@
+seed: 42
+log_level: INFO
+results_dir: results
+default_problem: light_eil51
+default_method: aco
+
+settings:
+  problem_type: tsp
+  problem_meta:
+    source: tsplib
+    data_dir: data/tsplib
+    # Use the full TSPLIB instance so known optima from the project document
+    # (eil51=426) remain valid.
+    problem_id: light_eil51
+
+  method_params:
+    # Shared knobs (methods ignore irrelevant keys)
+    n_iterations: 300
+    generations: 600
+    max_iterations: 200
+
+  llm:
+    enabled: false
+    provider: openai
+    model: gpt-4o-mini
+    api_key_env: METIS_API_KEY
+    base_url: https://api.metisai.ir/openai/v1
+    temperature: 0.1
+
+  evaluation:
+    enabled: true
+    repeats: 5
+    methods: ["aco", "ga_tsp", "hopfield"]
+    make_plots: true
+    save_per_run: true
+
+  feedback_loop:
+    enabled: true
+    max_rounds: 3
+    min_confidence: 0.55
