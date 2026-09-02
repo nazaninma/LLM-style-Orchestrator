@@ -1,0 +1,110 @@
+{
+  "problem_name": "titanic",
+  "problem_type": "classification",
+  "repeats": 5,
+  "methods": [
+    "perceptron",
+    "mlp"
+  ],
+  "stats": [
+    {
+      "method": "mlp",
+      "primary_metric": "test_accuracy",
+      "primary_mean": 0.8148148148148149,
+      "primary_std": 0.005237828008789209,
+      "primary_ci_low": 0.8102236561378298,
+      "primary_ci_high": 0.8194059734918,
+      "maximize": true,
+      "n_runs": 5,
+      "n_success": 5,
+      "n_fail": 0,
+      "success_rate": 1.0,
+      "metrics_mean": {
+        "iterations_completed": 200.0,
+        "test_accuracy": 0.8148148148148149,
+        "test_f1": 0.727650797075762,
+        "test_precision": 0.7804590758079131,
+        "test_recall": 0.6816326530612244,
+        "time_sec": 0.13764634132385253,
+        "train_accuracy": 0.8542536115569824,
+        "train_f1": 0.776318890430878,
+        "train_precision": 0.9110961512307902,
+        "train_recall": 0.6763948497854078,
+        "val_accuracy": 0.8240601503759398,
+        "val_f1": 0.7861741808530799,
+        "val_precision": 0.8708145258103241,
+        "val_recall": 0.7166666666666667
+      },
+      "metrics_std": {
+        "iterations_completed": 0.0,
+        "test_accuracy": 0.005237828008789209,
+        "test_f1": 0.00807474026821321,
+        "test_precision": 0.00986524249561905,
+        "test_recall": 0.011178011377656463,
+        "time_sec": 0.021176018861340882,
+        "train_accuracy": 0.003087541582932777,
+        "train_f1": 0.0061343591647462815,
+        "train_precision": 0.007852636534415987,
+        "train_recall": 0.011191763785755605,
+        "val_accuracy": 0.008572747557136384,
+        "val_f1": 0.008173820768602099,
+        "val_precision": 0.019998042043184613,
+        "val_recall": 0.0
+      }
+    },
+    {
+      "method": "perceptron",
+      "primary_metric": "test_accuracy",
+      "primary_mean": 0.7037037037037037,
+      "primary_std": 0.02618914004394621,
+      "primary_ci_low": 0.6807479103187777,
+      "primary_ci_high": 0.7266594970886298,
+      "maximize": true,
+      "n_runs": 5,
+      "n_success": 5,
+      "n_fail": 0,
+      "success_rate": 1.0,
+      "metrics_mean": {
+        "iterations_completed": 200.0,
+        "test_accuracy": 0.7037037037037037,
+        "test_f1": 0.6187828644971501,
+        "test_precision": 0.5816843551558492,
+        "test_recall": 0.673469387755102,
+        "time_sec": 0.25859794616699217,
+        "train_accuracy": 0.750561797752809,
+        "train_f1": 0.6765779453228511,
+        "train_precision": 0.6671460033726366,
+        "train_recall": 0.7004291845493562,
+        "val_accuracy": 0.7398496240601504,
+        "val_f1": 0.6900316313431067,
+        "val_precision": 0.7373015809827954,
+        "val_recall": 0.6566666666666666
+      },
+      "metrics_std": {
+        "iterations_completed": 0.0,
+        "test_accuracy": 0.02618914004394621,
+        "test_f1": 0.05626898380695369,
+        "test_precision": 0.03580996604069977,
+        "test_recall": 0.1232963874856589,
+        "time_sec": 0.029065237425740242,
+        "train_accuracy": 0.044693755139449544,
+        "train_f1": 0.0517067536887639,
+        "train_precision": 0.08429980335748616,
+        "train_recall": 0.10439864539887093,
+        "val_accuracy": 0.05691485975270846,
+        "val_f1": 0.08428231121214876,
+        "val_precision": 0.05189626338721191,
+        "val_recall": 0.13312483698477243
+      }
+    }
+  ],
+  "wilcoxon_vs_best": {
+    "perceptron": {
+      "p_value": null,
+      "n_pairs": 5,
+      "best_method": "mlp",
+      "metric": "test_accuracy",
+      "maximize": true
+    }
+  }
+}

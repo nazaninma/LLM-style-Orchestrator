@@ -1,0 +1,31 @@
+{
+  "final_method": "mlp",
+  "final_params": {
+    "hidden_layers": [
+      16,
+      16
+    ],
+    "lr": 0.05,
+    "epochs": 200
+  },
+  "history": [
+    {
+      "round": 1,
+      "action": "switch_method",
+      "method": "mlp",
+      "reason": "Evaluation suggests best method='mlp' based on primary metric."
+    },
+    {
+      "round": 2,
+      "action": "switch_method",
+      "method": "mlp",
+      "reason": "Evaluation suggests best method='mlp' based on primary metric."
+    },
+    {
+      "round": 3,
+      "action": "switch_method",
+      "method": "mlp",
+      "reason": "Evaluation suggests best method='mlp' based on primary metric."
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "problem_type": "classification",
+  "selected_method": "mlp",
+  "reasoning": "Classification: MLP is usually stronger than a linear perceptron; perceptron as backup.",
+  "parameters": {
+    "hidden_sizes": [
+      16,
+      8
+    ],
+    "max_epochs": 400,
+    "lr": 0.01,
+    "batch_size": 32
+  },
+  "backup_method": "perceptron",
+  "confidence": 0.82
+}
